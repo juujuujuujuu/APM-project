@@ -1,0 +1,4 @@
+import pandas as pd
+origin = pd.read_csv('/Users/anqihuang/Desktop/waterpump_train.csv')
+labor = pd.read_csv('/Users/anqihuang/Desktop/waterpump_label.csv')
+new_merge=pd.merge(origin,labor,left_on=['id'],right_on=['id'])
